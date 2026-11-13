@@ -30,6 +30,7 @@ This application allows users to manage student records through a simple and use
 | Maven | Build and Dependency Management |
 | HTML & CSS | User Interface |
 | VS Code | Development Environment |
+<img width="1828" height="957" alt="image" src="https://github.com/user-attachments/assets/a5046a03-995e-4586-87e9-02a1880ccc5b" />
 
 ## 📁 Project Structure
 
