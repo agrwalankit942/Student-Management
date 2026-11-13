@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #263b5e;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .student-card {
+            background: #f8faff;
+            border: 1px solid #dce5f2;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+
+        .student-card h2 {
+            color: #263b5e;
+            margin-bottom: 15px;
+        }
+
+        .student-card p {
+            margin: 12px 0;
+            color: #444;
+            font-size: 16px;
+        }
+
+        .student-card strong {
+            color: #263b5e;
+            display: inline-block;
+            width: 100px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 12px 22px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background: #1d4ed8;
+        }
+
+        .footer {
+            text-align: center;
+            color: #888;
+            margin-top: 25px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Student Management System</h1>
+
+    <p class="subtitle">
+        Welcome to Student Management Dashboard
+    </p>
+
+    <div class="student-card">
+
+        <h2>Student Details</h2>
+
+        <p>
+            <strong>Name:</strong>
+            Rahul Kumar
+        </p>
+
+        <p>
+            <strong>Course:</strong>
+            MCA
+        </p>
+
+        <p>
+            <strong>College:</strong>
+            Galgotias University
+        </p>
+
+        <p>
+            <strong>Department:</strong>
+            Computer Applications
+        </p>
+
+    </div>
+
+    <div style="text-align:center;">
+        <a th:href="@{/students}" class="button">
+            View All Students
+        </a>
+    </div>
+
+    <div class="footer">
+        Student Management System | Spring Boot MVC Project
+    </div>
+
+</div>
+
+</body>
+</html>
